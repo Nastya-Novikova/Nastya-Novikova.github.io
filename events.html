@@ -2,14 +2,16 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <title>Lenni Art</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 
 <body class="body">
   <header class="page-header">
@@ -34,6 +36,11 @@
   </header>
 
   <main class="main">
+    <div class="breadcrumbs">
+      <a href="#" class="breadcrumbs__link">Главная</a>
+      <a href="#" class="breadcrumbs__link">Раздел</a>
+      <a href="#" class="breadcrumbs__link">Страница раздела</a>
+    </div>
     <div class="events">
       <section class="listing events__listing">
         <h2 class="listing__title section-title">Мероприятия</h2>
@@ -43,7 +50,7 @@
           <article class="event-card  listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+                <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img">
               </picture>
 
               <h2 class="event-card__title">Собираемся и слушаем альбом Nirvana. Nirvana</h2>
@@ -56,7 +63,7 @@
           <article class="event-card  listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/stuff.jpg" alt="stuff" class="event-card__img" />
+                <img src="assets/images/events/stuff.jpg" alt="stuff" class="event-card__img">
               </picture>
 
               <h2 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h2>
@@ -69,7 +76,7 @@
           <article class="event-card  listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/sade.jpg" alt="sade" class="event-card__img" />
+                <img src="assets/images/events/sade.jpg" alt="sade" class="event-card__img">
               </picture>
 
               <h2 class="event-card__title">Вечер | The Best of Sade</h2>
@@ -82,7 +89,7 @@
           <article class="event-card  listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/malevich.jpg" alt="malevich" class="event-card__img" />
+                <img src="assets/images/events/malevich.jpg" alt="malevich" class="event-card__img">
               </picture>
 
               <h2 class="event-card__title">Выставка Малевича в Томске</h2>
@@ -95,7 +102,7 @@
           <article class="event-card  listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/tatler.jpg" alt="tatler" class="event-card__img" />
+                <img src="assets/images/events/tatler.jpg" alt="tatler" class="event-card__img">
               </picture>
 
               <h2 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h2>
@@ -108,7 +115,7 @@
           <article class="event-card  listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/hatters.jpg" alt="hatters" class="event-card__img" />
+                <img src="assets/images/events/hatters.jpg" alt="hatters" class="event-card__img">
               </picture>
 
               <h2 class="event-card__title">Повесилимся на славу на концерте The Hatters</h2>
@@ -119,11 +126,23 @@
             </a>
           </article>
         </div>
-        <!-- Кнопка "Показать все" -->
+
+        <div class="listing__button-wrapper">
+          <a href="#" class="listing__link">
+            <span class="listing__link-name"> Показать еще </span>
+          </a>
+          <a href="#" class="listing__link">
+            <svg class="listing__link-icon" width="91" height="60">
+              <use xlink:href="assets/icons/symbols.svg#link"></use>
+            </svg>
+          </a>
+        </div>
       </section>
 
       <section class="events__services">
-        <h2 class="listing__title section-title section-title--fs22">Дополнительные услуги</h2>
+        <h2 class="listing__title section-title section-title--fs22">
+          Дополнительные услуги
+        </h2>
 
         <p class="events__services--description">
           Перед запуском проекта, мы подготавливаем подробную смету и
@@ -132,7 +151,7 @@
           интересная работа, результатом которой будет проведение вашего
           мероприятия на высшем уровне.
         </p>
-        <table class="events__tariffs-table  table">
+        <table class="events__tariffs-table table">
           <thead class="table__head">
             <tr class="table__head-tr">
               <th class="table__th"></th>
@@ -146,7 +165,7 @@
               <th class="table__body-th">Стоимость за час</th>
               <td class="table__td">1 000 ₽</td>
               <td class="table__td">3 000 ₽</td>
-              <td class="table__td">3 000 ₽</td>
+              <td class="table__td">от 6 000 ₽</td>
             </tr>
             <tr class="table__tr">
               <th class="table__body-th">Ведущий мероприятия</th>
@@ -235,6 +254,76 @@
           </tfoot>
         </table>
       </section>
+
+      <section class="offers events__offers">
+        <div class="offers__wrapper">
+          <h3 class="offers__title">Я хочу:</h3>
+          <div class="offers__btn-wrapper">
+            <a href="#" class="btn btn--red offers__event-btn">
+              Провести мероприятие
+            </a>
+            <a href="#" class="btn offers__rent-btn">
+              Стать арендатором
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="information events__information">
+        <div class="information__container">
+          <div class="information__wrapper">
+            <div class="information__items">
+              <div class="information-item">
+                <div class="information-item__img">
+                  <svg class="information-item__icon" width="110" height="110">
+                    <use xlink:href="assets/icons/symbols.svg#information"></use>
+                  </svg>
+                </div>
+                <div class="information-item__content">
+                  <h3 class="information-item__title">Цены</h3>
+                  <p class="information-item__info">
+                    Цены, указанные на сайте носят информационный характер. Мы
+                    придерживаемся индивидуального подхода в работе с клиентом.
+                  </p>
+                </div>
+              </div>
+
+              <div class="information-item">
+                <div class="information-item__img">
+                  <svg class="information-item__icon" width="110" height="110">
+                    <use xlink:href="assets/icons/symbols.svg#contact"></use>
+                  </svg>
+                </div>
+                <div class="information-item__content">
+                  <h3 class="information-item__title">Контакты</h3>
+                  <p class="information-item__info">Отдел организации мероприятий</p>
+                  <a href="tel:74993500730" class="information-item__info">
+                    +7 499 350 0730
+                  </a>
+                  <a href="mailto:hi@tagree.ru" class="information-item__info">
+                    hi@tagree.ru
+                  </a>
+                </div>
+              </div>
+
+              <div class="information-item">
+                <div class="information-item__img">
+                  <svg class="information-item__icon" width="110" height="110">
+                    <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+                  </svg>
+                </div>
+                <div class="information-item__content">
+                  <h3 class="information-item__title">Преимущество</h3>
+                  <p class="information-item__info">
+                    Мы имеем все возможности для того, чтобы помочь как малому бизнесу
+                    и молодым талантам, так и большим корпорациям и холдингам.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
@@ -255,17 +344,44 @@
             Подпишись и будь в курсе происходящего
           </h4>
           <div class="subscribe__wrapper">
-            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required>
             <button type="submit" class="subscribe__submit">Подписаться</button>
           </div>
           <label class="subscribe__check check">
-            <input type="checkbox" class="check__input" name="agree" required />
+            <input type="checkbox" class="check__input" name="agree" required>
             <span class="check__mark"></span>
             <span class="check__label">
               Согласен на обработку персональных данных
             </span>
           </label>
         </form>
+      </div>
+      <div class="page-footer__information-wrapper">
+        <div class="page-footer__documents">
+          <label class="page-footer__documents-label">© Millennials 2022</label>
+          <div class="page-footer__documents-links">
+            <a href="" class="page-footer__link-politics">Политика конфиденциальности</a>
+            <a href="" class="page-footer__link-cookies">Cookies</a>
+          </div>
+        </div>
+        <div class="page-footer__networks">
+          <a href="" class="page-footer__networks-link">
+            <svg class="page-footer__link-instagram" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#insta"></use>
+            </svg>
+          </a>
+          <a href="" class="page-footer__networks-link">
+            <svg class="page-footer__link-vk" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#vk"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__company">
+          <span class="page-footer__company-text">Создание и продвижение</span>
+          <svg class="page-footer__company-name" width="56" height="17">
+            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </footer>
