@@ -1985,7 +1985,13 @@ textarea:focus:-ms-input-placeholder {
   color: #1f1e1e;
 }
 .page-header__nav {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0 auto;
 }
 .page-header__nav-link {
   margin: 0 25px;
@@ -1997,11 +2003,20 @@ textarea:focus:-ms-input-placeholder {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.page-header__nav-link:first-child {
-  margin: 0 25px 0 0;
-}
 .page-header__nav-link:hover {
   color: #bc3324;
+}
+.page-header__right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 202px;
 }
 .page-header__user-btn {
   -webkit-box-sizing: border-box;
